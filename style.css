@@ -1,0 +1,115 @@
+body{
+    padding: 0px;
+    margin: 0px;
+
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: -webkit-center;
+    margin-top: 25%;
+}
+.inpute{
+    width: 600px;
+    height: 25px;
+    border: 1px solid gainsboro;
+    border-radius: 4px;
+    padding-top: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+.input__text{
+    border: none;
+    width: 300px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    outline: none;
+    flex: 1;
+}
+.input__button{
+    border: none;
+    border-radius: 2px;
+    text-align: center;
+    height: 20px;
+    width: 50px;
+    margin-right: 10px;
+    color: #ffffff;
+    background-color: darkcyan;
+    outline: none;
+}
+
+.colorSelector{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+
+.taskList{
+    width: 600px;
+    height: 25px;
+    display: flex;
+}
+
+.taskList__task{
+    list-style-type: none;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column-reverse;
+    flex: 1;
+}
+
+.uniqId{
+    margin-bottom: 1px;
+    background-color: gray;
+}
+
+.div1{
+    float: left;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    border-right: 1px solid #ffffff;
+}
+.item__checkbox{
+    margin: auto;
+}
+
+.div2{
+    height: 60px;
+    display: flex;
+}
+
+.text{
+    color: #ffffff;
+    margin: 15px 0 0 20px ;
+    font-size: 25px;
+}
+
+#green{
+    background-color: green;
+}
+
+#yellow{
+    background-color: yellow;
+}
+
+#aqua{
+    background-color: aqua;
+}
+
+#blue{
+    background-color: blue;
+}
+
+#red{
+    background-color: red;
+}
+
+#brown{
+    background-color: brown;
+}
