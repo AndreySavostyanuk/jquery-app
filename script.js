@@ -1,15 +1,22 @@
-var x = 0
+
 var b
 $(".input__button").click(function () {
-    var a = $(".input__text").val();
-    x++;
 
-    if (a.length == 0) {
+
+
+    var a = $(".input__text").val();
+
+    if (a.length == 0 ) {
         alert("введите что нибудь");
         return
     }
 
-    if (x == 5) {
+    if(a.trim() == ''){
+        alert("введите что нибудь")
+        return
+    }
+
+    if ($(".taskList ul li").length == 5) {
         alert("больше нельзя");
         return;
     }
@@ -60,7 +67,7 @@ $(".input__button").click(function () {
     $($p).html(a);
 
     $('.item__checkbox').change(function () {
-        $(this).prop('checked');
+       j = $(this).prop('checked');
         if (j == true) {
             $(this).parent().parent().css('opacity', '0.5');
         } else {

@@ -3,53 +3,59 @@ body{
     margin: 0px;
 
 }
+
 .container{
+    background-color: #ffffff;
+    min-height: 100vh;
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    text-align: -webkit-center;
-    margin-top: 25%;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(5px + 2vmin);
+    color: white;
 }
+
 .inpute{
-    width: 600px;
-    height: 25px;
-    border: 1px solid gainsboro;
-    border-radius: 4px;
-    padding-top: 5px;
-    text-align: center;
+    margin: 0;
     display: flex;
     flex-direction: row;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid gainsboro;
+    box-shadow: 0px 0px 2px darkgrey;
 }
 .input__text{
     border: none;
     width: 300px;
+    font-size: 20px;
+    padding: 10px;
     margin-left: 10px;
-    margin-bottom: 5px;
     outline: none;
     flex: 1;
 }
 .input__button{
     border: none;
     border-radius: 2px;
-    text-align: center;
-    height: 20px;
-    width: 50px;
-    margin-right: 10px;
+    margin: 10px;
+    padding: 12px;
     color: #ffffff;
     background-color: darkcyan;
     outline: none;
+    width: 65px;
 }
 
 .colorSelector{
     display: inline-block;
     margin-right: 20px;
+    padding: 15px;
 }
 
 
 .taskList{
-    width: 600px;
+    width: 646px;
     height: 25px;
     display: flex;
+    padding: 10px;
 }
 
 .taskList__task{
@@ -64,6 +70,7 @@ body{
 .uniqId{
     margin-bottom: 1px;
     background-color: gray;
+    border-radius: 2px;
 }
 
 .div1{
@@ -113,3 +120,67 @@ body{
 #brown{
     background-color: brown;
 }
+
+
+.colorSelector input[type="radio"]{display:none}
+.colorSelector input[type="radio"]:checked + label{
+    background:#009688;
+    border-color:#009688
+}
+.colorSelector input[type="radio"]:checked + label:after{
+    transform:scale(1.3)
+}
+.colorSelector label{
+    display: -webkit-inline-flex;
+    box-sizing:border-box;
+    width:25px;
+    height:25px;
+   /* border:5px solid #7A7A7A; */
+    border-radius:10%;
+    position:relative;
+    cursor:pointer;
+    transition:.2s}
+
+#g{
+    background-color: green;
+}
+
+#y{
+    background-color: yellow;
+}
+#a{
+    background-color: aqua;
+}
+#b{
+    background-color: blue;
+}
+#r{
+    background-color: red;
+}
+#br{
+    background-color: brown;
+}
+
+.colorSelector label:before{
+    content:'';
+    position:absolute;
+    display:block;
+    height:300%;
+    width:300%;
+    top:-100%;
+    left:-100%;
+    z-index:-1;
+    border-radius:50%;
+    transition:.3s
+}
+.colorSelector label:after{
+    content:'';
+    display:block;
+    height:100%;
+    width:100%;
+    background:url(https://cbwconline.com/IMG/Codepen/Check.svg) center center no-repeat;
+    background-size:contain;
+    transform:scale(0);
+    transition:.2s}
+.colorSelector label:active:before{
+    background:#bfbfbf}
